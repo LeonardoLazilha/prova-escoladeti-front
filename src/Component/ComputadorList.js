@@ -9,7 +9,6 @@ const ComputadorList = () => {
   const [perifericos, setPerifericos] = useState([{ nome: "" }]);
   const [editando, setEditando] = useState(null);
 
-  // LISTAGEM 
   useEffect(() => {
     axios
       .get("http://localhost:8080/computador")
@@ -17,7 +16,6 @@ const ComputadorList = () => {
       .catch((error) => console.error("Erro ao buscar computadores:", error));
   }, []);
 
-  // CRIAR E EDITAR
   const salvarComputador = (e) => {
     e.preventDefault();
     const novoComputador = {
@@ -76,7 +74,6 @@ const ComputadorList = () => {
     setEditando(computador);
   };
 
-  // DELETE
   const deletarComputador = (id) => {
     axios
       .delete(`http://localhost:8080/computador/${id}`)
@@ -89,14 +86,15 @@ const ComputadorList = () => {
   return (
     <div className="container">
       <h1>Lista de Computadores</h1>
-      <h3>Leonardo Lazilha | RA 22003838-2</h3>
+      <h4>Leonardo Lazilha | RA 22003838-2</h4>
       <ul>
         {computadores.map((computador) => (
-          <li key={computador.id}>
-            {computador.nome} - {computador.cor}
-            <ul>
+          <li key={computador.id}> 
+           <div><strong>ID: </strong>{computador.id}</div>
+           <strong> Nome: </strong>{computador.nome} | <strong> Cor: </strong>{computador.cor} | <strong> Data fabricação: </strong>{computador.dataFabricacao}
+            <ul> 
               {computador.perifericos.map((periferico) => (
-                <li key={periferico.id}>{periferico.nome}</li>
+                <li key={periferico.id}><strong> Nome: </strong>{periferico.nome}</li>
               ))}
             </ul>
             <button className="edit-button" onClick={() => editarComputador(computador)}>Editar</button>
@@ -126,7 +124,7 @@ const ComputadorList = () => {
           <div key={index}>
             <input
               type="text"
-              placeholder="Nome do Periférico"
+              placeholder="Nome do Periferico"
               value={periferico.nome}
               onChange={(e) => handlePerifericoChange(index, e.target.value)}
               required

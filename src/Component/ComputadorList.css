@@ -15,7 +15,7 @@ div {
   font-family: Arial, sans-serif;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4{
   text-align: center;
   color: #333;
 }
@@ -44,7 +44,6 @@ ul li ul li {
   margin: 5px 0;
 }
 
-/* Estilo para o formulário */
 form {
   display: flex;
   flex-direction: column;
@@ -74,33 +73,33 @@ button:hover {
 }
 
 .edit-button {
-  background-color: #007bff; /* Azul para editar */
+  background-color: #007bff; 
 }
 
 .edit-button:hover {
-  background-color: #0056b3; /* Azul escuro no hover */
+  background-color: #0056b3; 
 }
 
 .delete-button {
-  background-color: #dc3545; /* Vermelho para deletar */
+  background-color: #dc3545; 
 }
 
 .delete-button:hover {
-  background-color: #c82333; /* Vermelho escuro no hover */
+  background-color: #c82333; 
 }
 
 .add-button {
-  background-color: #28a745; /* Verde para adicionar */
+  background-color: #28a745; 
 }
 
 .add-button:hover {
-  background-color: #218838; /* Verde escuro no hover */
+  background-color: #218838; 
 }
 
 .cancel-button {
-  background-color: #c03b55; /* Cinza para cancelar */
+  background-color: #dc3545; 
 }
 
 .cancel-button:hover {
-  background-color: #912f43; /* Cinza escuro no hover */
+  background-color: #c82333; 
 }
