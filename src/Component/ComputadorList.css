@@ -1,0 +1,106 @@
+.container{
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 0px 31px -6px rgba(0, 0, 0, 0.607);
+}
+
+div {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+h1, h2, h3 {
+  text-align: center;
+  color: #333;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  background-color: #f5f5f5;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+ul li ul {
+  margin-top: 10px;
+}
+
+ul li ul li {
+  background-color: #ddd;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 5px 0;
+}
+
+/* Estilo para o formulário */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.edit-button {
+  background-color: #007bff; /* Azul para editar */
+}
+
+.edit-button:hover {
+  background-color: #0056b3; /* Azul escuro no hover */
+}
+
+.delete-button {
+  background-color: #dc3545; /* Vermelho para deletar */
+}
+
+.delete-button:hover {
+  background-color: #c82333; /* Vermelho escuro no hover */
+}
+
+.add-button {
+  background-color: #28a745; /* Verde para adicionar */
+}
+
+.add-button:hover {
+  background-color: #218838; /* Verde escuro no hover */
+}
+
+.cancel-button {
+  background-color: #c03b55; /* Cinza para cancelar */
+}
+
+.cancel-button:hover {
+  background-color: #912f43; /* Cinza escuro no hover */
+}
